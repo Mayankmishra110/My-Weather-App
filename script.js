@@ -43,6 +43,7 @@ submit.addEventListener("click", (e) => {
 })
 
 getWeather("Delhi")
+
 const getWeather1 = () => {
     // cityName.innerHTML = Delhi;
 fetch(
