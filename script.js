@@ -41,7 +41,8 @@ submit.addEventListener("click", (e) => {
     getWeather(city.value)
 
 })
-// getWeather(city)
+
+getWeather("Delhi")
 const getWeather1 = () => {
     // cityName.innerHTML = Delhi;
 fetch(
@@ -59,7 +60,7 @@ fetch(
     min_temp1.innerHTML = response.min_temp
     max_temp1.innerHTML = response.max_temp
     wind_speed1.innerHTML = response.wind_speed
-    wind_speed5.innerHTML = response.wind_speed
+//     wind_speed5.innerHTML = response.wind_speed
 
     wind_degrees1.innerHTML = response.wind_degrees
     sunrise1.innerHTML = response.sunrise
