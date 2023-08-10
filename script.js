@@ -10,12 +10,12 @@ const getWeather = (city) => {
     cityName.innerHTML = city;
 fetch(
   "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
-  options
+  options       //fetching APIs to extract data from rapid API
 )
   .then((response) => response.json())
   .then((response) => {
     console.log(response);
-
+  
     cloud_pct.innerHTML =  response.cloud_pct  
     temp.innerHTML =  response.temp
     temp5.innerHTML =  response.temp 
